@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница - Мой сайт</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        nav {
+            background: #333;
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 5px 10px;
+        }
+        nav a:hover {
+            background: #555;
+            border-radius: 3px;
+        }
+        .container {
+            display: flex;
+            gap: 30px;
+        }
+        .main-content {
+            flex: 2;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .sidebar {
+            flex: 1;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .animation {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .informers {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .informer {
+            padding: 15px;
+            border-left: 4px solid #007cba;
+            background: #f8f9fa;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background: #333;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="websiteno1.html">Главная</a>
+        <a href="review.html">Обзор</a>
+        <a href="guide.html">Путеводитель</a>
+    </nav>
+
+    <div class="container">
+        <div class="main-content">
+            <h1>Прив, добро пожаловать на мой сайт!</h1>
+            
+            <div class="animation">
+                <h2>Интересная гифка</h2>
+                <img src="PR-1.gif" alt="Анимация" width="400">
+                <p>Вращающаяся геометрическая фигура</p>
+            </div>
+
+            <div class="content">
+                <h2>Интересный факт</h2>
+                <p>Привет! Это страница моего сайта. Здесь вы найдете полезную информацию.</p>
+                
+                <h3>На сайте вы найдёте:</h3>
+                <ul>
+                    <li>Информацию обо мне</li>
+                    <li>Список серверов для бесплатного размещения веб страниц</li>
+                    <li>Удобная навигация</li>
+                    <li>Полезные информеры</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <h2>Информеры</h2>
+            <div class="informers">
+                <div class="informer">
+                    <h3>Интересные факты</h3>
+                    <p>Оказывается на западе есть аналог вкусно и точка: Макдональдс</p>
+                    <p>Чем старше человек, тем больше ему лет</p>
+                </div>
+                
+                <div class="informer">
+                    <h3>Топ 3 почтовых сервиса</h3>
+                    <p>Mail.ru легенда</p>
+                    <p>Gmail претендент</p
+                    <p>Yahoo и новичок</p>
+                </div>
+                
+                <div class="informer">
+                    <h3>Дата и время</h3>
+                    <p id="datetime">Загрузка...</p>
+                </div>
+                
+                <div class="informer">
+                    <h3>Статистика посещений</h3>
+                    <p>Сегодня: примерно весь мир</p>
+                    <p>За месяц: пару миллиардов посещений</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Для Лабораторной работы 3.</p>
+    </footer>
+
+    <script>
+        // Обновление даты и времени
+        function updateDateTime() {
+            const now = new Date();
+            const options = { 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            };
+            document.getElementById('datetime').textContent = now.toLocaleDateString('ru-RU', options);
+        }
+        
+        setInterval(updateDateTime, 1000);
+        updateDateTime();
+    </script>
+</body>
+</html>

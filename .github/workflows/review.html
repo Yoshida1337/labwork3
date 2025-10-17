@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обзор - Мой сайт</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        nav {
+            background: #333;
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 5px 10px;
+        }
+        nav a:hover {
+            background: #555;
+            border-radius: 3px;
+        }
+        .content {
+            background: white;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .review-item {
+            margin-bottom: 25px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #eee;
+        }
+        .rating {
+            color: #ffa500;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="websiteno1.html">Главная</a>
+        <a href="review.html">Обзор</a>
+        <a href="guide.html">Путеводитель</a>
+    </nav>
+
+    <div class="content">
+        <h1>Обзор Почтовых сервисов</h1>
+        
+        <div class="review-item">
+            <h2>Gmail</h2>
+            <p class="rating">Рейтинг: 5/5</p>
+            <p>Удобный интерфейс:всё в одном месте: Письма, вкладки  видеозвонки (Google Meet), Календарь и Электронный Диск (Google Диск). Делает сервис многофункциональным</p>
+            <p><strong>Преимущества:</strong> Хранит все полученные письма: Не производит чистку данных. Поэтому вполне возможно найти письмо 5-ти летней давности и более. Отлично ищет письма по тегам (P.S. кодовым словам).</p>
+        </div>
+
+        <div class="review-item">
+            <h2>Mail.ru</h2>
+            <p class="rating">Рейтинг: 4.5/5</p>
+            <p>Сервис настроен под пользователя из России: На главной странице ведётся трансляция новостных телеканалов (Россия 1, Первый и тд.) </p>
+            <p><strong>Преимущества:</strong> Безопасность. Есть двухфакторная аутентификация, антивирусная проверка вложений и собственная система определения мошеннических писем.</p>
+        </div>
+
+        <div class="review-item">
+            <h2>Yahoo</h2>
+            <p class="rating">Рейтинг: 5/5</p>
+            <p>Yahoo Mail — это один из ветеранов веб-почты с неожиданно приятным и функциональным интерфейсом.</p>
+            <p><strong>Преимущества:</strong> Гибкость и кастомизация — интерфейс можно менять под себя. Размер шрифта, расположение виджетов и их наличие, изменять цвет темы</p>
+        </div>
+
+        <h2>Сравнительная таблица</h2>
+        <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; border-collapse: collapse;">
+            <tr style="background: #333; color: white;">
+                <th>Сервис</th>
+                <th>Интерфейс</th>
+                <th>Популярность</th>
+                <th>Удобство</th>
+            </tr>
+            <tr>
+                <td>Gmail</td>
+                <td>Приятный</td>
+                <td>По всему миру</td>
+                <td>Удобно</td>
+            </tr>
+            <tr>
+                <td>Mail.ru</td>
+                <td>Средний</td>
+                <td>Россия</td>
+                <td>Удобно</td>
+            </tr>
+            <tr>
+                <td>Yahoo</td>
+                <td>Отлично</td>
+                <td>Весь мир</td>
+                <td>Удобно</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
